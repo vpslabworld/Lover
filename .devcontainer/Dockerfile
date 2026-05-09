@@ -13,7 +13,7 @@ RUN apt-get update \
     && /tmp/setup.sh \
     && rm /tmp/setup.sh
 
-RUN echo 'printf "\n\033[1;32m[g2ray]\033[0m Connection string:\nvless://cd1aa9f2-f9e6-4b29-a5d3-5597b9337693@94.130.50.12:443?encryption=none&type=xhttp&security=tls&sni=${CODESPACE_NAME}-443.app.github.dev&alpn=h2,http/1.1&fp=chrome&path=/api&mode=packet-up#invincible\n"' >> /etc/bash.bashrc
+RUN echo 'printf "\n\033[1;32m[g2ray]\033[0m Connection string:\nvless://cd1aa9f2-f9e6-4b29-a5d3-5597b9337693@94.130.50.12:443?encryption=none&type=xhttp&security=tls&sni=${CODESPACE_NAME}-443.app.github.dev&alpn=h2,http/1.1&fp=chrome&path=/&mode=packet-up#invincible\n"' >> /etc/bash.bashrc
 
 EXPOSE 443
 
