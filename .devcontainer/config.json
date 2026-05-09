@@ -20,7 +20,7 @@
         "network": "xhttp",
         "xhttpSettings": {
           "mode": "packet-up",
-          "path": "/api"
+          "path": "/"
         }
       }
     }
